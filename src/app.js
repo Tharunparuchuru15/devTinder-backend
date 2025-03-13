@@ -1,21 +1,25 @@
 const express= require('express')
 
 const app = express()
-app.use("/",(req,res)=>{
-    res.send("Hel from the serve")
-})
-
-app.use("/hello",(req,res)=>{
-    res.send("Hello from the hello server")
-})
 
 app.use("/test",(req,res)=>{
-    res.send("Hello from the test server")
+    res.send("Hello from the test serverr")
 })
 
-app.use("/test", (req, res)=>{
-    res.send("hello from the practice")
+app.get("/user", (req, res)=>{
+    res.send("user sent")
+    
 })
+
+app.post("/user", (req,res)=>{
+    res.send("user created")
+})
+app.delete("/user", (req,res)=>{
+    res.send("user deleted")
+})
+
+
+
 
 app.listen(7000,()=>{
     console.log("Listening 00")
