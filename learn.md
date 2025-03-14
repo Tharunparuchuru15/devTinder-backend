@@ -8,4 +8,7 @@ how to test apis in browser in the first place?
 try regex in the routes
 read more about quer params in the routes 
 read about dynamic routes
-
+read more about middleware
+why are middlewares needed
+How express js handle request behind the scenes
+read about app.use() vs app.all()
